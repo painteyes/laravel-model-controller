@@ -1,11 +1,16 @@
+ 
+<h1>Movies</h1>
 
-<h2>Movies</h2>
+<div class="movies-list">
 
-@foreach ($movies as $movie)
+    @foreach ($movies as $movie)
 
-    <div class="card">
-        <h2>{{ $movie->title }} </h2>
-        <div>Autore: {{ $movie->date }}</div>
-        <div>YEAR: {{ $movie->vote }}</div>
-    </div>
-@endforeach
+        <div class="card">
+            <h2>{{ $movie->title }} </h2>
+            <div>Date: {{ $movie->date }}</div>
+            <div>Vote: {{ $movie->vote }}</div>
+        </div>
+
+    @endforeach 
+
+</div>
