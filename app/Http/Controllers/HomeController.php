@@ -12,7 +12,11 @@ class HomeController extends Controller
 
         $movies = Movie::all();
 
-        return view('home', compact('movies'));
+        $data = [
+            'movies' => $movies
+        ];
+
+        return view('home', $data);
     }
 
 }
